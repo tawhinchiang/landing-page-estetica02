@@ -15,6 +15,11 @@ function setupAssetImages() {
             index += 1;
             if (index >= sources.length) {
                 image.classList.add("asset-failed");
+                const slide = image.closest("[data-carousel-slide]");
+                if (slide) {
+                    slide.hidden = true;
+                    document.dispatchEvent(new CustomEvent("carousel-assets-changed"));
+                }
                 return;
             }
 
@@ -24,6 +29,11 @@ function setupAssetImages() {
         image.addEventListener("load", () => {
             image.classList.add("asset-loaded");
             image.classList.remove("asset-failed");
+            const slide = image.closest("[data-carousel-slide]");
+            if (slide) {
+                slide.hidden = false;
+                document.dispatchEvent(new CustomEvent("carousel-assets-changed"));
+            }
         });
 
         image.addEventListener("error", loadNext);
@@ -31,6 +41,97 @@ function setupAssetImages() {
     });
 }
 
+function setupClinicCarousels() {
+    document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+        const prevButton = carousel.querySelector("[data-carousel-prev]");
+        const nextButton = carousel.querySelector("[data-carousel-next]");
+        const dotsWrap = carousel.querySelector("[data-carousel-dots]");
+        let slides = [];
+        let activeIndex = 0;
+        let touchStartX = null;
+
+        carousel.setAttribute("tabindex", "0");
+
+        function visibleSlides() {
+            return Array.from(carousel.querySelectorAll("[data-carousel-slide]")).filter((slide) => !slide.hidden);
+        }
+
+        function setActive(nextIndex) {
+            if (!slides.length) return;
+            activeIndex = (nextIndex + slides.length) % slides.length;
+
+            slides.forEach((slide, index) => {
+                slide.classList.toggle("is-active", index === activeIndex);
+            });
+
+            dotsWrap?.querySelectorAll(".carousel-dot").forEach((dot, index) => {
+                dot.classList.toggle("is-active", index === activeIndex);
+                dot.setAttribute("aria-pressed", String(index === activeIndex));
+            });
+        }
+
+        function rebuildDots() {
+            slides = visibleSlides();
+
+            if (!slides.length) {
+                carousel.hidden = true;
+                return;
+            }
+
+            carousel.hidden = false;
+            carousel.classList.toggle("has-single-slide", slides.length < 2);
+            activeIndex = Math.min(activeIndex, slides.length - 1);
+
+            if (dotsWrap) {
+                dotsWrap.innerHTML = "";
+                slides.forEach((_, index) => {
+                    const dot = document.createElement("button");
+                    dot.className = "carousel-dot";
+                    dot.type = "button";
+                    dot.setAttribute("aria-label", `Ver foto ${index + 1}`);
+                    dot.setAttribute("aria-pressed", "false");
+                    dot.addEventListener("click", () => setActive(index));
+                    dotsWrap.appendChild(dot);
+                });
+            }
+
+            setActive(activeIndex);
+        }
+
+        prevButton?.addEventListener("click", () => setActive(activeIndex - 1));
+        nextButton?.addEventListener("click", () => setActive(activeIndex + 1));
+
+        carousel.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowLeft") {
+                event.preventDefault();
+                setActive(activeIndex - 1);
+            }
+            if (event.key === "ArrowRight") {
+                event.preventDefault();
+                setActive(activeIndex + 1);
+            }
+        });
+
+        carousel.addEventListener("touchstart", (event) => {
+            touchStartX = event.touches[0]?.clientX ?? null;
+        }, { passive: true });
+
+        carousel.addEventListener("touchend", (event) => {
+            if (touchStartX === null) return;
+            const touchEndX = event.changedTouches[0]?.clientX ?? touchStartX;
+            const distance = touchEndX - touchStartX;
+            touchStartX = null;
+
+            if (Math.abs(distance) < 42) return;
+            setActive(distance > 0 ? activeIndex - 1 : activeIndex + 1);
+        }, { passive: true });
+
+        document.addEventListener("carousel-assets-changed", rebuildDots);
+        rebuildDots();
+    });
+}
+
+setupClinicCarousels();
 setupAssetImages();
 
 const header = document.querySelector(".site-header");
