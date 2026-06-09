@@ -1,0 +1,111 @@
+{
+  "clinic": {
+    "name": "Clínica Zafier",
+    "doctor": "Dra. Mayara Cabral",
+    "specialty": "Harmonização Facial",
+    "location": "Araguaína - Tocantins",
+    "description": "Harmonização facial com segurança, tecnologia e cuidado personalizado"
+  },
+  "contact": {
+    "whatsapp": "+55 63 9999-9999",
+    "whatsappLink": "556399999999",
+    "instagram": "https://instagram.com/clinicazafier",
+    "facebook": "https://facebook.com/clinicazafier",
+    "address": "Araguaína - Tocantins, Brasil"
+  },
+  "colors": {
+    "primary": "#d4a574",
+    "secondary": "#2c3e50",
+    "accent": "#e8c5a0",
+    "textDark": "#1f1f1f",
+    "textLight": "#666",
+    "bgLight": "#f8f7f5",
+    "bgWhite": "#ffffff"
+  },
+  "services": [
+    {
+      "id": 1,
+      "name": "Preenchimento Facial",
+      "description": "Restaure o volume e a definição com procedimentos naturais e seguros.",
+      "image": "https://images.unsplash.com/photo-1579154204601-01d82b27e763?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 2,
+      "name": "Botox Facial",
+      "description": "Suavize linhas de expressão mantendo a naturalidade e mobilidade.",
+      "image": "https://images.unsplash.com/photo-1576091160643-112173f7f869?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 3,
+      "name": "Fios de PDO",
+      "description": "Lifting natural com fios biocompatíveis para rejuvenescimento.",
+      "image": "https://images.unsplash.com/photo-1576091160399-112173f7f869?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 4,
+      "name": "PDRN",
+      "description": "Tratamento inovador para rejuvenescimento profundo da pele.",
+      "image": "https://images.unsplash.com/photo-1576091160350-112173f7f869?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 5,
+      "name": "Harmonização Facial",
+      "description": "Planejamento completo para rosto harmônico e equilibrado.",
+      "image": "https://images.unsplash.com/photo-1576087301852-112173f7f869?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 6,
+      "name": "Cuidados Especiais",
+      "description": "Protocolos personalizados de cuidado pré e pós-procedimento.",
+      "image": "https://images.unsplash.com/photo-1576091160500-112173f7f869?w=400&h=300&fit=crop"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "stars": 5,
+      "text": "A Dra. Mayara é extremamente atenciosa. O resultado foi exatamente o que eu esperava, muito natural e harmônico. Recomendo a Clínica Zafier!",
+      "author": "Maria Silva"
+    },
+    {
+      "id": 2,
+      "stars": 5,
+      "text": "Ambiente acolhedor, equipe profissional e resultados que superaram minhas expectativas. Me sinto muito mais confiante!",
+      "author": "Juliana Costa"
+    },
+    {
+      "id": 3,
+      "stars": 5,
+      "text": "A avaliação foi muito completa. Senti que o tratamento foi realmente personalizado. A Dra. Mayara entende perfeitamente o que o paciente deseja.",
+      "author": "Fernanda Lima"
+    },
+    {
+      "id": 4,
+      "stars": 5,
+      "text": "Profissionalismo em cada etapa. Desde o primeiro contato até pós-procedimento, recebi um cuidado excepcional. Voltaria com certeza!",
+      "author": "Carolina Mendes"
+    }
+  ],
+  "benefits": [
+    {
+      "icon": "✨",
+      "title": "Harmonização facial avançada",
+      "description": "Técnicas modernas para resultados naturais e harmoniosos"
+    },
+    {
+      "icon": "👥",
+      "title": "Atendimento personalizado",
+      "description": "Cada paciente é único e valorizado em sua jornada"
+    },
+    {
+      "icon": "🏆",
+      "title": "Clínica referência em Araguaína",
+      "description": "Reconhecida por excelência e resultados naturais"
+    },
+    {
+      "icon": "⭐",
+      "title": "Dra. Mayara Cabral - Especialista",
+      "description": "Profissional qualificada e em constante atualização"
+    }
+  ]
+}
