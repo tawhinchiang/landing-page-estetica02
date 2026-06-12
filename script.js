@@ -1,5 +1,5 @@
-const whatsappNumber = "556392386749";
-const whatsappMessage = "Olá! Gostaria de agendar uma avaliação com a Dra. Mayara Cabral na Clínica Zafier.";
+const whatsappNumber = "5563992014547";
+const whatsappMessage = "Olá! Gostaria de agendar uma avaliação na Clínica Essenza.";
 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
 document.querySelectorAll("[data-whatsapp]").forEach((link) => {

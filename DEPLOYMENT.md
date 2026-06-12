@@ -1,10 +1,10 @@
-# 🚀 Guia de Deployment - Clínica Zafier Landing Page
+# 🚀 Guia de Deployment - Clínica Essenza Landing Page
 
 Instruções completas para colocar sua landing page online.
 
 ## 📋 Pré-requisitos
 
-- [ ] Domínio registrado (exemplo: clinicazafier.com.br)
+- [ ] Domínio registrado (exemplo: clinicaessenza.com.br)
 - [ ] Hosting contratado
 - [ ] Acesso FTP/SFTP ao servidor
 - [ ] Email registrado (para SSL, formulários, etc)
@@ -29,6 +29,7 @@ Instruções completas para colocar sua landing page online.
    - styles.css
    - script.js
    - config.json
+   - assets/
    - README.md
 
 ### 4. Habilitar HTTPS
@@ -48,8 +49,8 @@ Instruções completas para colocar sua landing page online.
 # Na pasta do projeto
 git init
 git add .
-git commit -m "Initial commit - Clínica Zafier Landing Page"
-git remote add origin https://github.com/seu-usuario/clinicaiesa.git
+git commit -m "Initial commit - Clínica Essenza Landing Page"
+git remote add origin https://github.com/seu-usuario/clinicaessenza.git
 git push -u origin main
 ```
 
@@ -69,7 +70,7 @@ git push -u origin main
 ### 1. Crie um Repositório
 1. Acesse [github.com](https://github.com)
 2. Clique **New Repository**
-3. Nome: `clinicaiesa` ou seu-usuario.github.io
+3. Nome: `clinicaessenza` ou seu-usuario.github.io
 4. Clique **Create Repository**
 
 ### 2. Faça Upload dos Arquivos
@@ -77,8 +78,8 @@ git push -u origin main
 cd sua-pasta-local
 git init
 git add .
-git commit -m "Clínica Zafier Landing Page"
-git remote add origin https://github.com/seu-usuario/clinicaiesa.git
+git commit -m "Clínica Essenza Landing Page"
+git remote add origin https://github.com/seu-usuario/clinicaessenza.git
 git branch -M main
 git push -u origin main
 ```
@@ -90,7 +91,7 @@ git push -u origin main
 4. Clique **Save**
 5. Aguarde o deployment (2-5 minutos)
 
-Sua página estará em: `seu-usuario.github.io/clinicaiesa`
+Sua página estará em: `seu-usuario.github.io/clinicaessenza`
 
 ## 📱 Pós-Deployment - Checklist
 
@@ -125,7 +126,7 @@ Sua página estará em: `seu-usuario.github.io/clinicaiesa`
 1. Acesse [analytics.google.com](https://analytics.google.com)
 2. Clique **Começar a medir**
 3. Preencha os dados:
-   - Nome: Clínica Zafier
+   - Nome: Clínica Essenza
    - URL: seu-dominio.com.br
 4. Copie o código de rastreamento
 
@@ -171,10 +172,10 @@ Sempre mantenha backup da landing page:
 
 ```bash
 # Crie um backup local
-cp -r clinicaiesa clinicaiesa-backup
+cp -r clinicaessenza clinicaessenza-backup
 
 # Ou use Git (recomendado)
-git clone seu-repositorio backup-clinicaiesa
+git clone seu-repositorio backup-clinicaessenza
 ```
 
 ## 🆘 Troubleshooting

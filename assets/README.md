@@ -1,18 +1,18 @@
-Arquivos de imagem usados automaticamente pela landing:
+Arquivos de imagem usados pela landing:
 
-- `logo.png`
-- `dra-mayara.jpg`, `dra-mayara.jpeg`, `dra-mayara.png` ou `dra-mayara.webp`
-- `clinica-zafier.jpg`, `clinica-zafier.jpeg`, `clinica-zafier.png` ou `clinica-zafier.webp`
+- `logo.svg`
+- `ambiente-estetica.jpg`
+- `equipe-estetica.png`
 
-Fotos do carrossel em `assets/carroussel/`:
+Fotos do carrossel em `assets/carrossel/`:
 
-- `subida.png`
-- `espelhos.png`
-- `ambiente2.png`
-- `quadro.png`
-- `parede.png`
-- `banheiro.png`
-- `ambiente3.png`
-- `sofá.png`
+- `tratamento-facial.png`
+- `spa-aconchegante.png`
+- `skincare-premium.png`
+- `sala-procedimento.png`
+- `cosmeticos-estetica.png`
+- `recepcao-spa.png`
+- `cuidados-pele.png`
+- `equipe-estetica.png`
 
-A página tenta esses nomes em ordem. No carrossel, slides sem arquivo de imagem são ocultados automaticamente.
+A página usa imagens genéricas do ramo de estética e mantém textos alternativos descritivos para acessibilidade.

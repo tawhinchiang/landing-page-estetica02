@@ -1,10 +1,10 @@
-# Clínica Zafier - Landing Page
+# Clínica Essenza - Landing Page
 
-Landing page profissional para Clínica Zafier - Harmonização Facial com Dra. Mayara Cabral em Araguaína.
+Landing page profissional para Clínica Essenza - Harmonização Facial com equipe especializada em Araguaína.
 
 ## 📋 Descrição
 
-Landing page moderna e responsiva desenvolvida para a Clínica Zafier, especializada em harmonização facial. O design é inspirado em padrões de alta conversão do mercado de estética, com foco em experiência do usuário e otimização para dispositivos móveis.
+Landing page moderna e responsiva desenvolvida para a Clínica Essenza, especializada em harmonização facial. O design é inspirado em padrões de alta conversão do mercado de estética, com foco em experiência do usuário e otimização para dispositivos móveis.
 
 ## 🎨 Recursos
 
@@ -19,7 +19,7 @@ Landing page moderna e responsiva desenvolvida para a Clínica Zafier, especiali
 ## 📁 Estrutura de Arquivos
 
 ```
-clinicaiesa/
+clinicaessenza/
 ├── index.html          # Página principal
 ├── styles.css          # Estilos e layout responsivo
 ├── script.js           # Interatividade e animações
@@ -51,7 +51,7 @@ Acesse em: `http://localhost:8000`
 1. **Navegação** - Menu flutuante com links para seções
 2. **Hero** - Imagem de destaque com chamada à ação
 3. **Benefícios** - 4 diferenciais principais
-4. **Sobre** - Informações sobre a clínica e dra. Mayara
+4. **Sobre** - Informações sobre a clínica e equipe técnica
 5. **Procedimentos** - Grid com 6 serviços principais
 6. **Como Funciona** - Timeline do atendimento
 7. **Depoimentos** - 4 testimoniais de pacientes
@@ -65,7 +65,7 @@ Acesse em: `http://localhost:8000`
 ### Alterar Número de WhatsApp
 Edite o arquivo `script.js` (linha ~35):
 ```javascript
-const whatsappNumber = '556399999999'; // Coloque seu número aqui
+const whatsappNumber = '5563992014547'; // Coloque seu número aqui
 ```
 
 ### Alterar Cores
@@ -80,8 +80,8 @@ Edite o arquivo `styles.css` (variáveis no topo):
 ```
 
 ### Alterar Imagens
-As imagens utilizam URLs públicas do Unsplash. Para usar imagens locais:
-1. Substitua a URL em `<img src="...">` pelo caminho local
+As principais imagens estão em `assets/` e `assets/carrossel/`. Para trocar por novas imagens locais:
+1. Substitua o caminho em `data-srcs="..."` ou `<img src="...">`
 2. Coloque as imagens na pasta do projeto
 
 Exemplo:
@@ -151,9 +151,9 @@ Edite a seção `#contato` no HTML com seus dados reais:
 
 ## 📝 Próximos Passos Recomendados
 
-1. ✅ Substituir números de WhatsApp reais
-2. ✅ Adicionar logo da clínica
-3. ✅ Inserir fotos reais da clínica e equipe
+1. ✅ Substituir número de WhatsApp
+2. ✅ Ajustar nome e identidade da clínica
+3. ✅ Inserir fotos genéricas ou reais da clínica e equipe
 4. ✅ Adicionar depoimentos reais de pacientes
 5. ✅ Integrar Google Analytics
 6. ✅ Configurar Google Search Console
@@ -168,7 +168,7 @@ Para dúvidas sobre personalização, consulte os comentários no código ou rev
 
 ## 📄 Licença
 
-Esta landing page foi criada para uso exclusivo da Clínica Zafier.
+Esta landing page foi criada para uso exclusivo da Clínica Essenza.
 
 ---
 
