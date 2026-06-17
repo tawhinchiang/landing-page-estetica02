@@ -1,18 +1,17 @@
-Arquivos de imagem usados pela landing:
+Arquivos de imagem usados pela landing do Salva Beauty.
 
-- `logo.svg`
-- `ambiente-estetica.jpg`
-- `equipe-estetica.png`
+Principais imagens reais:
 
-Fotos do carrossel em `assets/carrossel/`:
+- `salvabeauty_logo.jpg`
+- `salvabeauty_ambiente.png`
+- `salvabeauty_make_up.png`
+- `salvabeauty_make_up_2.png`
+- `salvabeauty_noivas.png`
+- `salvabeauty_noivas_2.png`
+- `salvabeauty_cachos.png`
+- `salvabeauty_hair_blonde.png`
+- `salvabeauty_unhas_red.png`
+- `salvabeauty_unhas_pes.png`
+- `salvabeauty_smilie_client.png`
 
-- `tratamento-facial.png`
-- `spa-aconchegante.png`
-- `skincare-premium.png`
-- `sala-procedimento.png`
-- `cosmeticos-estetica.png`
-- `recepcao-spa.png`
-- `cuidados-pele.png`
-- `equipe-estetica.png`
-
-A página usa imagens genéricas do ramo de estética e mantém textos alternativos descritivos para acessibilidade.
+As imagens antigas de estética permanecem na pasta, mas a página atual prioriza os arquivos com prefixo `salvabeauty_`.

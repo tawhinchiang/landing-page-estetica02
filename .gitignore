@@ -1,0 +1,24 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs and local env
+*.log
+.env
+.env.*
+!.env.example
+
+# Local browser/debug artifacts
+.chrome*/
+mobile-check*.png
+mobile-debug.png
+tmp-assets-sheet.png
+tmp_catalog_pages/
+
+# Dependency/build folders, in case the static page is later moved to a toolchain
+node_modules/
+dist/
+build/
+.cache/

@@ -1,111 +1,104 @@
 {
   "clinic": {
-    "name": "Clínica Essenza",
-    "doctor": "Equipe especializada",
-    "specialty": "Harmonização Facial",
+    "name": "Salva Beauty",
+    "doctor": "Equipe Salva Beauty",
+    "specialty": "Maquiagens, Penteados e Beleza Completa",
     "location": "Araguaína - Tocantins",
-    "description": "Harmonização facial com segurança, tecnologia e cuidado personalizado"
+    "description": "Salão de beleza especialista em maquiagens, penteados, noivas, cabelos, unhas e sobrancelhas"
   },
   "contact": {
-    "whatsapp": "+55 63 99201-4547",
-    "whatsappLink": "5563992014547",
-    "instagram": "https://instagram.com/clinicaessenza",
-    "facebook": "https://facebook.com/clinicaessenza",
-    "address": "Araguaína - Tocantins, Brasil"
+    "whatsapp": "+55 63 99272-5055",
+    "whatsappLink": "5563992725055",
+    "instagram": "https://www.instagram.com/salvabeautyy/",
+    "address": "Av. Cônego João Lima, 1500 - Centro, Araguaína - TO, 77804-010"
   },
   "colors": {
-    "primary": "#d4a574",
-    "secondary": "#2c3e50",
-    "accent": "#e8c5a0",
-    "textDark": "#1f1f1f",
-    "textLight": "#666",
-    "bgLight": "#f8f7f5",
-    "bgWhite": "#ffffff"
+    "primary": "#a11e22",
+    "secondary": "#3f2f2c",
+    "accent": "#c29455",
+    "textDark": "#3f2f2c",
+    "textLight": "#74615b",
+    "bgLight": "#f7efe7",
+    "bgWhite": "#fffdf9"
   },
   "services": [
     {
       "id": 1,
-      "name": "Preenchimento Facial",
-      "description": "Restaure o volume e a definição com procedimentos naturais e seguros.",
-      "image": "assets/carrossel/tratamento-facial.png"
+      "name": "Maquiagem & Penteados",
+      "description": "Maquiagem social, penteados clássicos, cabelos cacheados e finalização para eventos.",
+      "image": "assets/salvabeauty_make_up_2.png"
     },
     {
       "id": 2,
-      "name": "Botox Facial",
-      "description": "Suavize linhas de expressão mantendo a naturalidade e mobilidade.",
-      "image": "assets/carrossel/sala-procedimento.png"
+      "name": "Noivas",
+      "description": "Maquiagem de noiva, penteado de casamento, sala da noiva e acompanhamento profissional.",
+      "image": "assets/salvabeauty_noivas.png"
     },
     {
       "id": 3,
-      "name": "Fios de PDO",
-      "description": "Lifting natural com fios biocompatíveis para rejuvenescimento.",
-      "image": "assets/carrossel/cuidados-pele.png"
+      "name": "Escovas & Cortes",
+      "description": "Escova lisa, escova modelada, babyliss, corte, corte bordado e velaterapia.",
+      "image": "assets/salvabeauty_hair.png"
     },
     {
       "id": 4,
-      "name": "PDRN",
-      "description": "Tratamento inovador para rejuvenescimento profundo da pele.",
-      "image": "assets/carrossel/skincare-premium.png"
+      "name": "Coloração & Mechas",
+      "description": "Coloração, gloss, botox capilar, progressiva, realinhamento, mechas e mega hair.",
+      "image": "assets/salvabeauty_luzes.png"
     },
     {
       "id": 5,
-      "name": "Harmonização Facial",
-      "description": "Planejamento completo para rosto harmônico e equilibrado.",
-      "image": "assets/ambiente-estetica.jpg"
+      "name": "Unhas & Gel",
+      "description": "Manicure, pedicure, spa dos pés, alongamento, banho em gel e blindagem.",
+      "image": "assets/salvabeauty_unhas_red.png"
     },
     {
       "id": 6,
-      "name": "Cuidados Especiais",
-      "description": "Protocolos personalizados de cuidado pré e pós-procedimento.",
-      "image": "assets/carrossel/cosmeticos-estetica.png"
+      "name": "Sobrancelhas & Micropigmentação",
+      "description": "Design, henna, brow com tintura, lash lift, fio a fio, shadow e labial.",
+      "image": "assets/salvabeauty_make_up.png"
     }
   ],
   "testimonials": [
     {
       "id": 1,
       "stars": 5,
-      "text": "A equipe é extremamente atenciosa. O resultado foi exatamente o que eu esperava, muito natural e harmônico. Recomendo a Clínica Essenza!",
-      "author": "Paciente 01"
+      "text": "Experiência única! Ambiente agradável, amplo, climatizado. Colaboradores super atenciosos.",
+      "author": "Bárbara Carolyne"
     },
     {
       "id": 2,
       "stars": 5,
-      "text": "Ambiente acolhedor, equipe profissional e resultados que superaram minhas expectativas. Me sinto muito mais confiante!",
-      "author": "Paciente 02"
+      "text": "Um lugar diferenciado. Organizado, com atendimento sempre regado a afeto e excelência.",
+      "author": "Ximena Oliveira"
     },
     {
       "id": 3,
       "stars": 5,
-      "text": "A avaliação foi muito completa. Senti que o tratamento foi realmente personalizado. A equipe entende perfeitamente o que o paciente deseja.",
-      "author": "Paciente 03"
-    },
-    {
-      "id": 4,
-      "stars": 5,
-      "text": "Profissionalismo em cada etapa. Desde o primeiro contato até pós-procedimento, recebi um cuidado excepcional. Voltaria com certeza!",
-      "author": "Paciente 04"
+      "text": "Profissionais excelentes. Ambiente agradável. Tudo de muito bom gosto.",
+      "author": "Avaliação Google"
     }
   ],
   "benefits": [
     {
-      "icon": "✨",
-      "title": "Harmonização facial avançada",
-      "description": "Técnicas modernas para resultados naturais e harmoniosos"
+      "icon": "star",
+      "title": "Avaliação 5,0 no Google",
+      "description": "Reconhecimento de clientes pela experiência e atendimento"
     },
     {
-      "icon": "👥",
-      "title": "Atendimento personalizado",
-      "description": "Cada paciente é único e valorizado em sua jornada"
+      "icon": "heart-handshake",
+      "title": "Atendimento afetivo",
+      "description": "Equipe atenciosa em cada etapa da produção"
     },
     {
-      "icon": "🏆",
-      "title": "Clínica referência em Araguaína",
-      "description": "Reconhecida por excelência e resultados naturais"
+      "icon": "crown",
+      "title": "Especialista em noivas",
+      "description": "Pacotes para maquiagem, penteado e dia da noiva"
     },
     {
-      "icon": "⭐",
-      "title": "Equipe especializada",
-      "description": "Profissionais qualificados e em constante atualização"
+      "icon": "map-pin",
+      "title": "Centro de Araguaína",
+      "description": "Localização prática na Av. Cônego João Lima"
     }
   ]
 }

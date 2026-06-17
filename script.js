@@ -1,5 +1,5 @@
-const whatsappNumber = "5563992014547";
-const whatsappMessage = "Olá! Gostaria de agendar uma avaliação na Clínica Essenza.";
+const whatsappNumber = "5563992725055";
+const whatsappMessage = "Olá! Gostaria de agendar um atendimento no Salva Beauty.";
 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
 document.querySelectorAll("[data-whatsapp]").forEach((link) => {
@@ -7,7 +7,12 @@ document.querySelectorAll("[data-whatsapp]").forEach((link) => {
 });
 
 function setupAssetImages() {
-    document.querySelectorAll("img[data-srcs]").forEach((image) => {
+    const images = Array.from(document.querySelectorAll("img[data-srcs]"));
+
+    const prepareImage = (image) => {
+        if (image.dataset.assetPrepared === "true") return;
+        image.dataset.assetPrepared = "true";
+
         const sources = image.dataset.srcs.split("|").map((source) => source.trim()).filter(Boolean);
         let index = -1;
 
@@ -38,7 +43,30 @@ function setupAssetImages() {
 
         image.addEventListener("error", loadNext);
         loadNext();
-    });
+    };
+
+    if ("IntersectionObserver" in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                prepareImage(entry.target);
+                observer.unobserve(entry.target);
+            });
+        }, {
+            rootMargin: "520px 0px"
+        });
+
+        images.forEach((image) => {
+            const hasHiddenFallback = image.classList.contains("doctor-photo") || image.classList.contains("doctor-avatar");
+            if (hasHiddenFallback) {
+                prepareImage(image);
+                return;
+            }
+            imageObserver.observe(image);
+        });
+    } else {
+        images.forEach(prepareImage);
+    }
 }
 
 function setupClinicCarousels() {
