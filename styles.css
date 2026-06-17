@@ -1619,8 +1619,8 @@ blockquote {
     }
 
     .container {
-        width: calc(100vw - 28px);
-        max-width: calc(100vw - 28px);
+        width: calc(100% - 40px);
+        max-width: 1180px;
     }
 
     .site-header {
@@ -1678,12 +1678,18 @@ blockquote {
         transform: translateY(-50%);
     }
 
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
     .nav-cta {
         display: none;
     }
 
     .section-band {
-        padding: 64px 0;
+        padding: 76px 0;
     }
 
     .hero {
@@ -1697,18 +1703,20 @@ blockquote {
         position: relative;
         display: grid;
         gap: 24px;
-        width: 100%;
-        max-width: 100%;
+        width: calc(100% - 40px);
+        max-width: 1180px;
+        margin-inline: auto;
         min-width: 0;
     }
 
     .hero-copy {
         position: relative;
         z-index: 2;
-        width: min(100%, calc(100vw - 28px));
-        max-width: calc(100vw - 28px);
+        width: 100%;
+        max-width: 100%;
         min-width: 0;
         padding-top: 10px;
+        padding-inline: 4px;
     }
 
     .hero-visual {
@@ -1750,8 +1758,8 @@ blockquote {
 
     .hero-copy h1,
     .hero-subtitle {
-        width: min(100%, calc(100vw - 28px));
-        max-width: calc(100vw - 28px);
+        width: 100%;
+        max-width: 100%;
     }
 
     .hero-subtitle {
@@ -1760,8 +1768,8 @@ blockquote {
     }
 
     .authority {
-        max-width: calc(100vw - 28px);
-        width: min(100%, calc(100vw - 28px));
+        max-width: 100%;
+        width: 100%;
         padding: 12px 14px;
         border: 1px solid rgba(216, 176, 109, 0.24);
         border-left: 2px solid var(--champagne);
@@ -1772,7 +1780,7 @@ blockquote {
     }
 
     h1 {
-        max-width: calc(100vw - 28px);
+        max-width: 100%;
         font-size: clamp(2.08rem, 9.6vw, 2.45rem);
         line-height: 1;
         overflow-wrap: break-word;
@@ -1780,7 +1788,7 @@ blockquote {
     }
 
     .headline-break {
-        display: block;
+        display: inline;
     }
 
     .headline-pipe {
@@ -1820,8 +1828,8 @@ blockquote {
     }
 
     .hero-notes {
-        width: min(100%, calc(100vw - 28px));
-        max-width: calc(100vw - 28px);
+        width: 100%;
+        max-width: 100%;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         margin-top: 28px;
         overflow: hidden;
@@ -1862,8 +1870,11 @@ blockquote {
     }
 
     .catalog-menu {
+        margin-top: 50px;
         padding: 20px 14px;
         border-radius: 18px;
+        opacity: 1;
+        transform: none;
     }
 
     .catalog-group,
@@ -1873,6 +1884,15 @@ blockquote {
 
     .catalog-group {
         padding: 20px 16px;
+    }
+
+    .catalog-heading {
+        margin-bottom: 22px;
+        text-align: left;
+    }
+
+    .catalog-heading h3 {
+        font-size: clamp(2rem, 9vw, 2.6rem);
     }
 
     .menu-item {
@@ -1925,6 +1945,10 @@ blockquote {
     .procedure-link {
         grid-column: 2;
         margin-top: 6px;
+    }
+
+    .positioning .section-heading {
+        margin-top: 70px;
     }
 
     .carousel-track {
@@ -1996,6 +2020,40 @@ blockquote {
     .footer-grid,
     .footer-bottom {
         display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 44px 0 28px;
+    }
+
+    .footer-grid {
+        gap: 28px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer p {
+        max-width: 280px;
+    }
+
+    .footer-links {
+        min-width: 0;
+    }
+
+    .footer-links a {
+        align-items: flex-start;
+        gap: 12px;
+        min-width: 0;
+        overflow-wrap: anywhere;
+        line-height: 1.35;
+    }
+
+    .footer-links svg {
+        flex: 0 0 auto;
+        margin-top: 2px;
     }
 
     .footer-bottom {
