@@ -258,7 +258,6 @@ a {
 .footer-links svg,
 .eyebrow svg,
 .image-badge svg,
-.appointment-card svg,
 .whatsapp-float svg {
     width: 18px;
     height: 18px;
@@ -809,40 +808,6 @@ h3 {
     color: var(--taupe);
     font-size: 0.82rem;
     font-weight: 700;
-}
-
-.soft-card {
-    border: 1px solid var(--border);
-    border-radius: var(--radius-card);
-    background: rgba(255, 253, 249, 0.88);
-    box-shadow: var(--shadow-soft);
-    backdrop-filter: blur(14px);
-}
-
-.appointment-card {
-    position: absolute;
-    right: -18px;
-    bottom: 26px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    width: min(290px, calc(100% - 28px));
-    padding: 18px;
-}
-
-.appointment-card svg {
-    width: 34px;
-    height: 34px;
-    color: var(--olive);
-}
-
-.appointment-card strong,
-.appointment-card small {
-    display: block;
-}
-
-.appointment-card small {
-    color: var(--taupe);
 }
 
 .section-copy {
@@ -1960,14 +1925,6 @@ blockquote {
     .procedure-link {
         grid-column: 2;
         margin-top: 6px;
-    }
-
-    .appointment-card {
-        position: relative;
-        right: auto;
-        bottom: auto;
-        width: 100%;
-        margin-top: 14px;
     }
 
     .carousel-track {
